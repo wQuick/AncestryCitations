@@ -24,6 +24,7 @@
 # Ancestry Gramplet
 #
 #------------------------------------------------------------------------
+from gramps.version import major_version
 
 register(GRAMPLET, 
          id = "Ancestry Gramplet", 
@@ -31,7 +32,7 @@ register(GRAMPLET,
          description = _("Gramplet interface adding Ancestry citations"),
          status = STABLE,
          version = '0.1',
-         gramps_target_version = '5.2',
+         gramps_target_version = major_version,
          fname = "ancestrygramplet.py",
          gramplet = 'AncestryGramplet',
          height = 375,
